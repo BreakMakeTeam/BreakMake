@@ -1,4 +1,5 @@
 #include <OGL3D/Graphics/OGraphicsEngine.h>
+#include <OGL3D/Graphics/OVertexArrayObject.h>
 #include <glad/glad.h>
 #include <glad/glad_wgl.h>
 #include <assert.h>
@@ -68,6 +69,11 @@ OGraphicsEngine::~OGraphicsEngine()
 {
 }
 
+OVertexArrayPtr OGraphicsEngine::createVAO(const OVBufferData& data)
+{
+	return std::make_shared<OVertexArrayObject>(data);
+}
+
 void OGraphicsEngine::clear(const OVec4& color)
 {
 	glClearColor(color.x, color.y, color.z, color.w);
@@ -77,4 +83,14 @@ void OGraphicsEngine::clear(const OVec4& color)
 void OGraphicsEngine::setViewport(const ORect& rect)
 {
 	glViewport(rect.left, rect.top, rect.width, rect.height);
+}
+
+void OGraphicsEngine::setVAO(const OVertexArrayPtr& vao)
+{
+	glBindVertexArray(vao->getID());
+}
+
+void OGraphicsEngine::drawTri(ui32 VCount, ui32 offset)
+{
+	glDrawArrays(GL_TRIANGLES, offset, VCount);
 }

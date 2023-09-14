@@ -36,6 +36,9 @@
     <ClCompile Include="OpenGL 3D\include\OGL3D\Math\OVec4.h">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="OpenGL 3D\source\OGL3D\Graphics\OVertexArrayObject.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGL 3D\include\OGL3D\Window\OWindow.h">
@@ -51,6 +54,9 @@
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL 3D\include\OGL3D\Math\ORect.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL 3D\include\OGL3D\Graphics\OVertexArrayObject.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>

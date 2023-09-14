@@ -150,6 +150,7 @@
     <ClCompile Include="OpenGL 3D\source\OGL3D\Window\OWindow.cpp" />
     <ClCompile Include="OpenGL 3D\vendor\glad\src\glad.c" />
     <ClCompile Include="OpenGL 3D\vendor\glad\src\glad_wgl.c" />
+    <ClCompile Include="OpenGL 3D\source\OGL3D\Graphics\OVertexArrayObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGL 3D\include\OGL3D\Graphics\OGraphicsEngine.h" />
@@ -157,6 +158,7 @@
     <ClInclude Include="OpenGL 3D\include\OGL3D\Math\ORect.h" />
     <ClInclude Include="OpenGL 3D\include\OGL3D\OPreq.h" />
     <ClInclude Include="OpenGL 3D\include\OGL3D\Window\OWindow.h" />
+    <ClInclude Include="OpenGL 3D\include\OGL3D\Graphics\OVertexArrayObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
