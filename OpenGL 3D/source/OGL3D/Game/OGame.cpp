@@ -29,7 +29,7 @@ void OGame::onCreate()
 	VAOPtr = gEngine->createVAO({ (void*)Verts, sizeof(f32) * 3, 3 });
 
 	color		= OVec4(1, 0.5f, 0, 1);
-	colorChange = OVec4(0.01f, 0.005f, 0.015f, 0);
+	colorChange = OVec4(0.005f, 0.01f, 0.015f, 0);
 }
 
 void OGame::onUpdate()
